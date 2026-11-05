@@ -29,36 +29,6 @@ html.dhr {
   --dhr-on-status: #ffffff;
   --dhr-row: #f5f6f9;
 }
-html.dhr[data-dhr-theme='dark'] {
-  --dhr-bar: #0a0c1c;
-  --dhr-bg: #14172b;
-  --dhr-border: #2c3150;
-  --dhr-control: #7d82a0;
-  --dhr-danger: #ff8a80;
-  --dhr-done: #5fd39a;
-  --dhr-focus: #8ab4ff;
-  --dhr-ink: #eceef6;
-  --dhr-mark: #ff6b1a;
-  --dhr-muted: #a9adc2;
-  --dhr-on-status: #14172b;
-  --dhr-row: #1c2038;
-}
-@media (prefers-color-scheme: dark) {
-  html.dhr:not([data-dhr-theme='light']) {
-    --dhr-bar: #0a0c1c;
-    --dhr-bg: #14172b;
-    --dhr-border: #2c3150;
-    --dhr-control: #7d82a0;
-    --dhr-danger: #ff8a80;
-    --dhr-done: #5fd39a;
-    --dhr-focus: #8ab4ff;
-    --dhr-ink: #eceef6;
-    --dhr-mark: #ff6b1a;
-    --dhr-muted: #a9adc2;
-    --dhr-on-status: #14172b;
-    --dhr-row: #1c2038;
-  }
-}
 
 html.dhr,
 html.dhr body {
