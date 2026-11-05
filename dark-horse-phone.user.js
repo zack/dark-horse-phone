@@ -1,5 +1,8 @@
 // ==UserScript==
 // @name        Dark Horse phone layout
+// @version     2026.11.05.140736
+// @downloadURL https://raw.githubusercontent.com/zack/dark-horse-phone/main/dark-horse-phone.user.js
+// @updateURL   https://raw.githubusercontent.com/zack/dark-horse-phone/main/dark-horse-phone.user.js
 // @match       https://darkhorseacademy.teachable.com/courses/*/lectures/*
 // @grant       none
 // @run-at      document-idle

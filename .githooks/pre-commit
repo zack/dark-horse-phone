@@ -1,0 +1,12 @@
+#!/bin/sh
+# Violentmonkey only installs an update when @version goes up, so every
+# commit that touches the script stamps it with the current UTC time.
+set -e
+
+SCRIPT=dark-horse-phone.user.js
+
+if git diff --cached --name-only | grep -qx "$SCRIPT"; then
+  VERSION=$(date -u +%Y.%m.%d.%H%M%S)
+  sed -i "s|^// @version .*|// @version     $VERSION|" "$SCRIPT"
+  git add "$SCRIPT"
+fi
